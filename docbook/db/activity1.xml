@@ -1,6 +1,16 @@
-
 <chapter>
-	<title>Prueba</title>
-	<para>Texto de prueba</para>
+<sect1>
+        
+                <title>Escritorio remoto con VNC</title>
+                <para>Instalar y configurar VNC para poder acceder a una máquina remota.
+                </para>
+                <imageobject>
+                             <imagedata scale="90" fileref="./imagenes/1º.png" format="PNG"/>
+                </imageobject>
+                <para>Estos nuevos equipos piloto disponen de un software mínimo
+                porque no disponíamos del suficiente tiempo.
+                Esto equipos han servido de base para clonar el resto de equipos del aula.
+                </para>
+</sect1>
 </chapter>
 	
