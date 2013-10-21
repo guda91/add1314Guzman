@@ -7,13 +7,14 @@ Trabajos curso completo
    </title>
    <author>
 		<personname>
-			<firstname>Guzmán Martín y Alejandro Fuentes</firstname>
+			<firstname>Guzmán</firstname>
+			<surname>Martín Martín</surname>
 		</personname>
    </author>
 </info>
 
-
 <xi:include href="activity1.xml" />
+<xi:include href="activity2.xml" />
 
 </book>
 

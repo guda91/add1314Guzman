@@ -1,0 +1,64 @@
+<chapter>
+	<title>Clientes Ligeros</title>
+<sect1>
+                <title>Instalación del servidor LTSP.</title>
+                
+                <para>Primero debemos ejecutar el siguiente comando para instalar el servidor.
+                </para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/primera.png"/>
+                </imageobject>
+                <para>Después creamos una imagen con este comando que usaran los clientes.</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/segunda.png"/>
+                </imageobject>
+                <para>También instalaremos el servidor ssh.</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/tercera.png"/>
+                </imageobject>
+</sect1>
+<sect1>
+				<title>Configuración del Servidor.</title>
+				
+                 <para>Entraremos en el archivo interfaces para configurar el adaptador.</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/cuarta.png"/>
+                </imageobject>
+                <para>Modificamos el hostname.</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/quinta.png"/>
+                </imageobject>
+                <para>Luego modificaremos el valor managed del archivo /etc/NetworkManager/NetworkManager.conf a "True"</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/sexta.png"/>
+                </imageobject>
+
+                <para>>El fichero de configuración del DHCP en el fichero /etc/ltsp/dhcpd.conf lo configuramos así:</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/septima.png"/>
+                </imageobject>
+                <para>En /etc/default/isc-dhcp-server ponemos la interfaz que vamos a usar con el LTSP:</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/octava.png"/>
+                </imageobject>
+                <para>Tras esto reiniciamos el servicio de DHCP:</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/novena.png"/>
+                </imageobject>
+                <para> También reiniciaremos el servicio tftpd-hpa.</para>
+                <imageobject>
+                             <imagedata scale="50" fileref="imagenes/decima.png"/>
+                </imageobject>
+</sect1>
+
+<sect1>
+	<title>Prueba con el cliente.</title>
+	<para>Usaremos una máquina virtual vacía, sin disco duro ni unidad de CD. 
+	Solo podrá arrancar por red al conectarse a nuestro servidor y usando la imagen
+	que anteriormente creamos.</para>
+	<ulink url="http://youtu.be/-ghnxdguLwE">Vídeo: Prueba Cliente-Servidor</ulink>
+
+</sect1>
+							
+
+</chapter>
