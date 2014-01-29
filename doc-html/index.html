@@ -1,8 +1,13 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-	<title>T&iacute;tulo del trabajo</title>
+	<title>Servidor de impresión.</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
 <body>
+	<a id="arriba"></a>
 <div style='display:table-row; padding: 10px;'>
   <div style='float: left; width=20%; padding:10px;'>
   <img src='./files/logo.png'/>
@@ -10,21 +15,41 @@
   <div style='float: left;padding:10px'>
   <ul>
     <li><b>M&oacute;dulo:</b> <i>Sistemas Operativos</i></li>
-    <li><b>T&iacute;tulo del trabajo</b> <i>Plantilla HTML entrega de trabajo</i></li>
-    <li><b>Componentes del grupo:</b> <i>David Vargas</i></li>
+    <li><b>T&iacute;tulo del trabajo</b> <i>Servidor de impresión.</i></li>
+    <li><b>Componentes del grupo:</b> <i>Guzmán Martín Martín</i></li>
     <li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
-    <li><b>Fecha de entrega:</b> <i>1 de Enero de 2014</i></li>
+    <li><b>Fecha de entrega:</b> <i>29 de Enero de 2014</i></li>
   </ul>
   </div>
 </div>
 <div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
-<a href='#bloque1'>Bloque 1</a> | <a href='#bloque2'>Bloque 2</a> | <a href='#final'>Conclusiones</a>
+<a href='#bloque1'>Instalación y configuración.</a> | <a href='#bloque2'>Pruebas.</a> | <a href='#final'></a>
 </div>
-<h1><a id='bloque1'>Bloque 1</a></h1>
-<p>Bla bla bla bla...</p>
-<h1><a id='bloque2'>Bloque 2</a></h1>
-<p>Bla bla bla bla...</p>
-<h1><a id='final'>Conclusiones</a></h1>
-<p>Bla bla bla bla...</p>
+<h1><a id='bloque1'>Instalación y configuración.</a></h1>
+<p align="center">Comenzaremos realizando la instalación del programa PDFCreator, que nos permitirá "imprimir" archivos en el ordenador cómo si se tratara de una impresora real.<br/>
+Luego veremos que aparece como una impresora más.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/1.png' /></p>
+
+<p align="center">Ahora probaremos a añadirle al servidor el rol de servicios de impresión y documentos.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/4.png' /></p>
+<p align="center">Dentro de ese rol, añadiremos unos servicios específicos.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/5.png' /></p>
+<p align="center">E iniciaremos la instalación.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/6.png' /></p>
+
+<h1><a id='bloque2'>Pruebas.</a></h1>
+<p align="center">Hacemos una prueba al darle a imprimir a un archivo que hemos creado anteriormente, nos saldrá una ventana como ésta.</p>
+<p align="center"><img src='./files/Imagenes/impresion/2.png' /></p>
+<p align="center">Aquí podemos ver el resultado, un pdf con lo que hemos escrito en el archivo anterior.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/3.png' /></p>
+<p align="center">En nuestras impresoras remotas podemos ver que aparece la del PDFCreator, <br/>deberemos permitir que sea compartida y ponerla en pausa para captar desde el cliente que se está imprimiendo algo.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/7.png' /></p>
+<p align="center">Con las herramientas de Active Directory deberemos crear un dominio.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/8.png' /></p>
+<p align="center">En el navegador del cliente ponemos la IP del servidor, nos salen las propiedades de las impresoras.</p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/penultima.png' /></p>
+<p align="center">Vemos que ahora se ve la cola de documentos que se van a imprimir, gracias a que está en pausa la impresora. </p>
+<p align="center"><img border="1" src='./files/Imagenes/impresion/ultima.png' /></p>
+<p align="center"><a href='#arriba' >Ir al principio de la página.</a></p>
 </body>
 </html>
