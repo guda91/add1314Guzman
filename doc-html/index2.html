@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Gestor de infraestructura Puppet.</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
+<a id="arriba"></a>
+<div style='display:table-row; padding: 10px;'>
+  <div style='float: left; width=20%; padding:10px;'>
+  <img src='./files/logo.png'/>
+  </div>
+  <div style='float: left;padding:10px'>
+  <ul>
+    <li><b>M&oacute;dulo:</b> <i>Sistemas Operativos</i></li>
+    <li><b>T&iacute;tulo del trabajo</b> <i>Servidor de impresión.</i></li>
+    <li><b>Componentes del grupo:</b> <i>Guzmán Martín Martín y Alejandro Fuentes León.</i></li>
+    <li><b>Curso Acad&eacute;mico:</b> <i>2013/2014</i></li>
+    <li><b>Fecha de entrega:</b> <i>12 de Marzo de 2014</i></li>
+  </ul>
+  </div>
+</div>
+<div style='float: clear;background-color: #eeeeee; border:2px solid; border-radius:10px; padding: 10px;'>
+<a href='#bloque1'>Configuración servidor Puppetmaster y clientes.</a> | <a href='#bloque2'>Configuración Puppet en el servidor y sus ficheros.</a> | <a href='#bloque3'>Aceptación de certificados.</a>
+</div>
+<h1><a id='bloque1'>Configuración servidor Puppetmaster y clientes.</a></h1>
+	<p align="center">Comenzaremos la siguiente práctica configurando el dnsdomainname, el hostname y el archivo /etc/hosts. También deberemos configurar correctamente la ip del servidor.</p>
+		<p align="center"><img border="1" src='./files/Imagenes/puppet/1.png' /></p>
+	<p align="center">Haremos lo mismo en el cliente Linux.</p>
+		<p align="center"><img border="1" src='./files/Imagenes/puppet/2.png' /></p>
+		<p align="center"><img border="1" src='./files/Imagenes/puppet/3.png' /></p>
+		<p align="center"><img border="1" src='./files/Imagenes/puppet/4.png' /></p>
+	<p align="center">Sin embargo, en el cliente Windows será diferente. Deberemos encontrar el archivo hosts propio de Windows y modificarlo.</p>
+		<p align="center"><img border="1" src='./files/Imagenes/puppet/5.png' /></p>
+		<p align="center"><img border="1" src='./files/Imagenes/puppet/6.png' /></p>
+	<p align="center">También cambiaremos el nombre del equipo.</p>
+	<p align="center">Para la instalación del Puppetmaster realizaremos el comando apt-get install puppetmaster en el servidor y apt-get install puppetagent en el cliente.</p>
+<h1><a id='bloque2'>Configuración Puppet en el servidor y sus ficheros.</a></h1>
+	<p align="center">Crearemos una estructura de carpetas dentro de /etc/puppet para configurar el Puppetmaster. Usaremos los archivos para que escoja una configuración en función del cliente sea.</p>
+		<p align="center"><img src='./files/Imagenes/puppet/7.png' /></p>
+	<p align="center">Aquí podemos ver el contenido de los diferentes archivos.</p>
+		<p align="center"><img border="1" src='./files/Imagenes/puppet/8.png' /></p>
+<h1><a id='bloque3'>Aceptación de certificados.</a></h1>
+	<p align="center">-Aceptación en máquina Debian</p>
+<p align="center"><img border="1" src='./files/Imagenes/puppet/9.png' /></p>
+<p align="center"><img border="1" src='./files/Imagenes/puppet/10.png' /></p>
+<p align="center">-Aceptación máquina windows</p>
+<p align="center">En el caso de windows nos acepta el certificado, pero luego da error:</p>
+<p align="center"><img border="1" src='./files/Imagenes/puppet/11.png' /></p>
+<p align="center"><img border="1" src='./files/Imagenes/puppet/12.png' /></p>
+<p align="center"><a href='#arriba' >Ir al principio de la página.</a></p>
+</body>
+</html>
